@@ -1,4 +1,4 @@
-      //   Shadowing                //
+      //                      3.1     Shadowing                          //
 fn main() {
 
     let name = "Zakariya Khan";
@@ -12,7 +12,7 @@ fn main() {
 // }
 
 
-    //   //                        Tupple                        //
+    //   //                    3.2    Tupple                        //
     // we can store multiple values of different types in tupple. Once the tupple 
     // is innitialized it cannot be extended 
 
@@ -35,7 +35,9 @@ fn main() {
     // By initializing keys to tupple now u just have to write the key and
     //  u will get the detail u want now u dont have to remember index
           
-    //                     Arey                          //
-
+    //                           3.2    Arey                                    //
+    // //We can store multiple values but not of different types thier type should 
+    // // be same
+    // // Like tupple it also has the fixed length and cannot be change later
 
 }

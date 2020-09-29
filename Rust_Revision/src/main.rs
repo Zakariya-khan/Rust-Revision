@@ -25,7 +25,7 @@ fn main() {
     
     // We use indexing to print our values //
     
-    println!("second value {} forth value {}",tupname.1,tupname.2);
+    println!("second value {} Third value {}",tupname.1,tupname.3);
 
     //                 now indexing tupple with key                //
 
@@ -34,10 +34,21 @@ fn main() {
 
     // By initializing keys to tupple now u just have to write the key and
     //  u will get the detail u want now u dont have to remember index
+// }
+
           
     //                           3.2    Arey                                    //
     // //We can store multiple values but not of different types thier type should 
     // // be same
     // // Like tupple it also has the fixed length and cannot be change later
 
+// fn main (){
+
+    let name_of_arrey = [90,20,25,45,22];
+    println!(" First value = {}, Third value = {}", name_of_arrey[0],name_of_arrey[2]);
+
+    let [Maths,Science,English,Islamiat,History] = name_of_arrey;
+    println!("{}",Maths );
+
 }
+  

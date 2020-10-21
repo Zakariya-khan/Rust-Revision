@@ -198,13 +198,93 @@
 // add_subtract_multiply_and_divide(5,7);
 // }
 
+// use std::io;
+
+// fn main() {
+
+// println!("Which number should be add in  100? So when we divide it by 4, The answer will be 30 and also check the answer is even or odd.");
+//  let mut attempts = 3;
+// loop{
+//   println!("Attempts left {}  ",attempts );
+//   attempts -=1;
+
+//   let mut answer = String::new();
+//   io::stdin()
+//   .read_line(&mut answer)
+//   .expect("Failed to read line");
+//   let variable = answer.trim().parse::<i32>().unwrap();
+  
+//   check(variable);
+  
+//   if variable == 20 {
+//     break
+//   println!("Congrats your answer is correct",)
+//   }else{
+//   println!("Try Again")
+//   }
+   
+//   if attempts == 0 {
+//     break
+//   }
+       
+
+// };
+
+// }
+    
+  
+// // fn game(x:i32)->i32{
+
+  
+// //   let y = 20;
+  
+// //   if x==y{
+// //     println!("Your Answer is Correct");
+// //   }else{
+// //     println!("Your Answer is Wrong");
+// //   }
+
+// //   y
+// // }
+
+
+// fn check(y:i32){
+  
+// if y% 2 == 0{
+//   println!("Your input is Even");
+// }else{
+//   println!("your input is Odd");
+//   };
+  
+// }
+
+ 
+//        While Loop
+
+
+// fn main(){
+
+//   // let (name,Roll_No,Grade,Marks) =(String::from("Zakariya Khan"),28,'A',950);
+//   let student_1 = [20,950,80];
+  
+//   let mut counter = 0;
+//   while counter < student_1.len() {
+//   println!("{}",student_1[counter] );
+//     counter +=1;
+//   }
+// }
+
+
+
+
+
 use std::io;
 
 fn main() {
 
 println!("Which number should be add in  100? So when we divide it by 4, The answer will be 30 and also check the answer is even or odd.");
  let mut attempts = 3;
-loop{
+while attempts > 0{
   println!("Attempts left {}  ",attempts );
   attempts -=1;
 
@@ -214,11 +294,11 @@ loop{
   .expect("Failed to read line");
   let variable = answer.trim().parse::<i32>().unwrap();
   
+  game(variable);
   check(variable);
   
   if variable == 20 {
     break
-  println!("Congrats your answer is correct",)
   }else{
   println!("Try Again")
   }
@@ -233,19 +313,19 @@ loop{
 }
     
   
-// fn game(x:i32)->i32{
+fn game(x:i32)->i32{
 
   
-//   let y = 20;
+  let y = 20;
   
-//   if x==y{
-//     println!("Your Answer is Correct");
-//   }else{
-//     println!("Your Answer is Wrong");
-//   }
+  if x==y{
+    println!("Your Answer is Correct");
+  }else{
+    println!("Your Answer is Wrong");
+  }
 
-//   y
-// }
+  y
+}
 
 
 fn check(y:i32){
@@ -257,5 +337,3 @@ if y% 2 == 0{
   };
   
 }
-
- 

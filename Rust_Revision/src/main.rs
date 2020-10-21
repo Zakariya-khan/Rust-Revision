@@ -278,15 +278,79 @@
 
 
 
+// use std::io;
+
+// fn main() {
+
+// println!("Which number should be add in  100? So when we divide it by 4, The answer will be 30 and also check the answer is even or odd.");
+//  let mut attempts = 3;
+// while attempts > 0{
+//   println!("Attempts left {}  ",attempts );
+//   attempts -=1;
+
+//   let mut answer = String::new();
+//   io::stdin()
+//   .read_line(&mut answer)
+//   .expect("Failed to read line");
+//   let variable = answer.trim().parse::<i32>().unwrap();
+  
+//   game(variable);
+//   check(variable);
+  
+//   if variable == 20 {
+//     break
+//   }else{
+//   println!("Try Again")
+//   }
+   
+//   if attempts == 0 {
+//     break
+//   }
+       
+
+// };
+
+// }
+    
+  
+// fn game(x:i32)->i32{
+
+  
+//   let y = 20;
+  
+//   if x==y{
+//     println!("Your Answer is Correct");
+//   }else{
+//     println!("Your Answer is Wrong");
+//   }
+
+//   y
+// }
+
+
+// fn check(y:i32){
+  
+// if y% 2 == 0{
+//   println!("Your input is Even");
+// }else{
+//   println!("your input is Odd");
+//   };
+  
+// }
+
+//  For Loop
+
+
+
 use std::io;
 
 fn main() {
 
-println!("Which number should be add in  100? So when we divide it by 4, The answer will be 30 and also check the answer is even or odd.");
- let mut attempts = 3;
-while attempts > 0{
-  println!("Attempts left {}  ",attempts );
-  attempts -=1;
+  println!("Which number should be add in  100? So when we divide it by 4, The answer will be 30 and also check the answer is even or odd.");
+ 
+for attempts in (1..4).rev()  {
+  println!("Attempts left {} ",attempts );
+  
 
   let mut answer = String::new();
   io::stdin()
@@ -310,6 +374,27 @@ while attempts > 0{
 
 };
 
+
+let arrey = [22,44,55,22,11];
+
+for elements in arrey.iter(){
+  println!("{}",elements );
+}
+
+
+
+let mut variable = String::from("");
+for i in 0..5 {
+  variable.push('*');
+  println!("{}",variable );
+}
+
+for i in 1..5{
+  variable.pop();
+
+  println!("{}",variable );
+}
+
 }
     
   
@@ -330,10 +415,12 @@ fn game(x:i32)->i32{
 
 fn check(y:i32){
   
-if y% 2 == 0{
+if y % 2 == 0{
   println!("Your input is Even");
 }else{
   println!("your input is Odd");
   };
   
+
 }
+
